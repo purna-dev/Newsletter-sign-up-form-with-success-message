@@ -1,0 +1,404 @@
+@font-face {
+    font-family: 'roboto-r';
+    src: url('assets/fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'roboto-b';
+    src: url('assets/fonts/Roboto-Bold.ttf');
+}
+
+:root {
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+    --roboto-r: 'roboto-r';
+    --roboto-b: 'roboto-b';
+    --Tomato-p: hsl(4, 100%, 67%);
+    --pink-p: #ff5476;
+    --toma-p: #ff693e;
+
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--Dark-Slate-Grey);
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .card {
+    font-family: var(--roboto-r);
+
+    display: flex;
+    align-items: center;
+    border-radius: 1.4rem;
+    background-color: var(--White);
+    gap: 1.8rem;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    /* display: none; */
+}
+
+.container .card .card_l {
+    padding-left: 3.1rem;
+    padding-top: 1.5rem;
+
+}
+
+.container .card .card_l h1 {
+    font-size: 2.5rem;
+    font-family: var(--roboto-b);
+    color: var(--Dark-Slate-Grey);
+    letter-spacing: 0.01rem;
+}
+
+.container .card .card_l p {
+    color: var(--Charcoal-Grey);
+    font-weight: 600;
+    font-size: 0.7rem;
+    margin: 1rem 0;
+}
+
+.container .card .card_l .lists {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.container .card .card_l .lists img {
+    width: 16px;
+}
+
+.container .card .card_l .lists p {
+
+    margin: 0.3rem;
+}
+
+.container .card .card_l .input-f {
+    display: flex;
+    flex-direction: column;
+    margin: 1.7rem 0;
+}
+
+.container .card .card_l .input-f label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--Dark-Slate-Grey);
+}
+
+.container .card .card_l .input-f input {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.4rem;
+    height: 45px;
+    margin: 0.5rem 0;
+    padding: 0 0.7rem;
+    transition: all 0.5s ease;
+    font-family: var(--roboto-r);
+}
+
+::-webkit-input-placeholder {
+    padding-left: 0.1rem;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+input:focus {
+    outline: 1px solid rgba(0, 0, 0, 1);
+}
+
+.container .card .card_l .input-f button {
+    height: 45px;
+    background-color: var(--Dark-Slate-Grey);
+    border-radius: 0.4rem;
+    font-family: var(--roboto-r);
+    font-size: 0.7rem;
+    color: var(--White);
+    cursor: pointer;
+    margin: 0.5rem 0;
+    transition: all 0.5s ease-in;
+    border: none;
+}
+
+.container .card .card_l .input-f div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .card .card_l .input-f div .err_i {
+    color: var(--Tomato-p);
+    font-size: 0.7rem;
+    display: none;
+}
+
+.container .card .card_l .input-f button:hover {
+    box-shadow: 0px 7px 10px 7px rgba(255, 76, 52, 0.2);
+    background-image: linear-gradient(to right, var(--pink-p), var(--toma-p));
+}
+
+.container .card .card_r {
+    width: 340px;
+    margin: 1rem;
+}
+
+.container .card .card_r img:nth-child(1) {
+    width: 100%;
+}
+.container .card .card_r img:nth-child(2) {
+    /* width: 100%; */
+    display: none;
+
+}
+
+
+.container .card2 {
+    font-family: var(--roboto-r);
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 1.4rem;
+    background-color: var(--White);
+    gap: 1rem;
+    width: 360px;
+    padding: 2rem 3rem;
+    display: none;
+
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+
+.container .card2 img {
+    width: 43px;
+}
+
+.container .card2 h1 {
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+    color: var(--Dark-Slate-Grey);
+    font-family: var(--roboto-b);
+    margin-top: 1rem;
+    /* width: 315px; */
+
+}
+
+.container .card2 p {
+    font-size: 0.71rem;
+    color: var(--Charcoal-Grey);
+    line-height: 1rem;
+    margin: 1rem 0;
+    /* width: 229px; */
+
+}
+
+.container .card2 p span {
+    font-weight: 600;
+}
+
+.container .card2 button {
+    height: 45px;
+    width: 260px;
+
+    background-color: var(--Dark-Slate-Grey);
+    border-radius: 0.4rem;
+    font-family: var(--roboto-r);
+    font-size: 0.7rem;
+    color: var(--White);
+    cursor: pointer;
+    margin: 0.8rem 0;
+    transition: all 0.5s ease-in;
+    border: none;
+}
+
+.container .card2 button:hover {
+
+    box-shadow: 0px 7px 10px 7px rgba(255, 76, 52, 0.2);
+    background-image: linear-gradient(to right, var(--pink-p), var(--toma-p));
+}
+
+@media (max-width:500px) {
+
+
+    body{
+        background-color: var(--White);
+
+    }
+
+    .container {
+        position: relative;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        /* width: 100%; */
+        transform: translate(0);
+    }
+
+    .container .card {
+        flex-direction: column-reverse;
+        border-radius: 0;
+        /* width: 100%; */
+
+        /* height: 100vh; */
+    }
+
+    .container .card .card_l {
+        padding: 0rem 1.8rem;
+
+    }
+
+    .container .card .card_l .lists {
+        align-items: start;
+        padding: 0.4rem;
+        gap:0.5rem;
+    }
+
+    .container .card .card_l .lists p {
+        margin: 0 0.5rem;
+
+    }
+
+    .container .card .card_l p {
+        font-size: 0.92rem;
+        line-height: 1.5rem;
+        color: var(--Charcoal-Grey);
+        opacity: 0.9;
+    }
+
+    .container .card .card_l .lists img {
+        width: 20px;
+    }
+
+    .container .card .card_r {
+        /* width: 375px;
+        height: 190px; */
+        width: 100%;
+        margin: 0rem;
+    }
+
+    .container .card .card_r img:nth-child(1) {
+        display: none;
+
+    }
+
+    .container .card .card_r img:nth-child(2) {
+        width: 100%;
+        display: inline;
+
+        
+
+    }
+
+    .container .card .card_l .input-f {
+
+        margin: 0.1rem 0;
+    }
+
+    .container .card .card_l .input-f div{
+        margin-top: 1.5rem;
+
+    }
+
+    .container .card .card_l .input-f label {
+
+        font-size: 0.8rem;
+    }
+    .container .card .card_l .input-f input {
+        height: 50px;
+        
+    }
+    .container .card .card_l .input-f #btn_submit{
+        font-size: 0.9rem;
+        /* color: rgba(255, 255, 255, 0.8); */
+        height: 50px;
+        font-family: var(--roboto-b);
+        /* letter-spacing: 0.1rem; */
+        margin: 0.5rem 0;
+        margin-bottom: 1rem;
+    }
+    ::-webkit-input-placeholder{
+        font-size: 0.9rem;
+    }
+
+
+    
+.container .card2 {
+    height: 100vh;
+    /* align-items: center; */
+    padding: 4.5rem 2rem;
+
+   
+}
+
+.container .card2 img {
+    width: 55px;
+}
+
+.container .card2 h1 {
+    font-size: 2.7rem;
+    
+    margin-top: 2rem;
+    /* width: 315px; */
+
+}
+
+.container .card2 p {
+    font-size: 0.9rem;
+    color: var(--Charcoal-Grey);
+    line-height: 1.4rem;
+    margin: 1.8rem 0;
+    /* width: 229px; */
+
+}
+
+.container .card2 p span {
+    font-weight: 600;
+}
+
+.container .card2 button {
+    height: 50px;
+    width: 85%;
+
+    font-size: 0.9rem;
+    
+    /* margin: 1rem 0; */
+    position: absolute;
+    bottom: 3rem;
+    left: 1.6rem;
+   
+}
+
+.container .card .card_l .input-f div {
+    align-items: center;
+}
+
+.container .card .card_l .input-f div .err_i {
+    
+    font-size: 0.8rem;
+    
+}
+
+}
