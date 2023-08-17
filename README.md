@@ -29,13 +29,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.JPG)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/purna-dev/Newsletter-sign-up-form-with-success-message)
+- Live Site URL: [Project live site URL](https://purna-dev.github.io/Newsletter-sign-up-form-with-success-message/)
 
 
 
